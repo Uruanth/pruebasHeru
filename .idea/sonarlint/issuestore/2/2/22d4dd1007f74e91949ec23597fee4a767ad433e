@@ -1,7 +1,0 @@
-
-g
-java:S1128"ERemove this unused import 'co.com.sofka.parches.collections.Usuario'.(öÜœùÿÿÿÿ8¨şåë/
-r
-java:S1128"PRemove this unused import 'co.com.sofka.parches.repositories.UsuarioRepository'.(ƒ¢Ê’úÿÿÿÿ8ªşåë/
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(àåÛ¸ùÿÿÿÿ8×şåë/
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(è¦ìšüÿÿÿÿ8Üşåë/

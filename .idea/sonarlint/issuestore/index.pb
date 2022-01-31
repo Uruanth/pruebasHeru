@@ -30,17 +30,3 @@ r
 Bsrc/main/java/co/com/sofka/parches/routers/InicioSesionRouter.java,c\a\cad1a43acb688ce6fad5b6aad9ea9aa3a3ce1842
 o
 ?src/test/java/co/com/sofka/parches/ParchesApplicationTests.java,6\6\66beaf3dcc567020d8ab7197b9e267a68d07f968
-x
-Hsrc/test/java/co/com/sofka/parches/useCases/InicioSesionUseCaseTest.java,e\4\e4f396b6c84ff1b9e959da91021ffda9ad754302
-t
-Dsrc/main/java/co/com/sofka/parches/useCases/InicioSesionUseCase.java,2\2\22d4dd1007f74e91949ec23597fee4a767ad433e
-k
-;src/main/java/co/com/sofka/parches/mappers/MapperUtils.java,b\d\bdfa40ab7a2386c1f99994c96c12448d97cbe26a
-j
-:src/main/java/co/com/sofka/parches/utils/Validaciones.java,5\5\55fdab86b693587f03055d7c610a4caab5c8ccc5
-g
-7src/main/java/co/com/sofka/parches/dtos/UsuarioDTO.java,9\0\902280b488c07a2f2947e2dd58a93f99b12425ec
-t
-Dsrc/main/java/co/com/sofka/parches/useCases/CrearUsuarioUseCase.java,a\d\adb5e41522065f8cb1cab89049ef61be007f824f
-x
-Hsrc/test/java/co/com/sofka/parches/useCases/CrearUsuarioUseCaseTest.java,a\2\a2dab142f33700ca84ff5e747a7cff6bc8cb1325
