@@ -40,3 +40,11 @@ g
 7src/main/java/co/com/sofka/parches/dtos/UsuarioDTO.java,9\0\902280b488c07a2f2947e2dd58a93f99b12425ec
 t
 Dsrc/main/java/co/com/sofka/parches/useCases/CrearUsuarioUseCase.java,a\d\adb5e41522065f8cb1cab89049ef61be007f824f
+t
+Dsrc/main/java/co/com/sofka/parches/useCases/InicioSesionUseCase.java,2\2\22d4dd1007f74e91949ec23597fee4a767ad433e
+r
+Bsrc/main/java/co/com/sofka/parches/routers/InicioSesionRouter.java,c\a\cad1a43acb688ce6fad5b6aad9ea9aa3a3ce1842
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+K
+.github/workflows/build.yml,f\e\fe77d5d1439f26e353a42bbd38dece2467ff6558

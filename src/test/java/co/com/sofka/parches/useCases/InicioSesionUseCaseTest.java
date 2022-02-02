@@ -3,7 +3,6 @@ package co.com.sofka.parches.useCases;
 import co.com.sofka.parches.collections.Usuario;
 import co.com.sofka.parches.dtos.UsuarioDTO;
 import co.com.sofka.parches.mappers.MapperUtils;
-import co.com.sofka.parches.repositories.UsuarioRepository;
 import co.com.sofka.parches.utils.Validaciones;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -13,7 +12,6 @@ import org.springframework.web.server.ResponseStatusException;
 import reactor.core.publisher.Mono;
 import reactor.test.StepVerifier;
 
-import static org.mockito.ArgumentMatchers.refEq;
 
 
 class InicioSesionUseCaseTest {
@@ -21,6 +19,11 @@ class InicioSesionUseCaseTest {
     Validaciones validaciones;
     InicioSesionUseCase useCase;
 
+    private static final String ID_MONGO = "idMongo";
+    private static final String UID = "IdentificacionUsuario";
+    private static final String NOMBRES = "Dairon Perilla";
+    private static final String CORREO = "correo";
+    private static final String IMAGEN = "imagen";
 
     @BeforeEach
     public void setUp() {
@@ -34,49 +37,47 @@ class InicioSesionUseCaseTest {
     void iniciarSesionCorrecto() {
         MapperUtils mapper = new MapperUtils();
 
-        String uid = "IdentificacionUsuario";
-
         UsuarioDTO respuesta = new UsuarioDTO();
-        respuesta.setId("idMongo");
-        respuesta.setUid(uid);
-        respuesta.setNombres("Dairon Perilla");
-        respuesta.setEmail("correo");
-        respuesta.setImagenUrl("imagen");
+        respuesta.setId(ID_MONGO);
+        respuesta.setUid(UID);
+        respuesta.setNombres(NOMBRES);
+        respuesta.setEmail(CORREO);
+        respuesta.setImagenUrl(IMAGEN);
 
-        Usuario usuario = mapper.mapperDTOaEntidadUsuario("idMongo").apply(respuesta);
+        Usuario usuario = mapper.mapperDTOaEntidadUsuario(ID_MONGO).apply(respuesta);
 
         Mockito.when(validaciones
                         .verificarExistenciaUsuarioMongoYFirebaseParaIniciarSesion(Mockito.any()))
                         .thenReturn(Mono.just(usuario));
 
-        StepVerifier.create(useCase.apply(uid))
+        StepVerifier.create(useCase.apply(UID))
                 .expectNextMatches(usuarioDTO -> {
-                    assert usuarioDTO.getId().equals("idMongo");
-                    assert usuarioDTO.getUid().equals(uid);
-                    assert usuarioDTO.getNombres().equals("Dairon Perilla");
-                    assert usuarioDTO.getEmail().equals("correo");
-                    assert usuarioDTO.getImagenUrl().equals("imagen");
+                    assert usuarioDTO.getId().equals(ID_MONGO);
+                    assert usuarioDTO.getUid().equals(UID);
+                    assert usuarioDTO.getNombres().equals(NOMBRES);
+                    assert usuarioDTO.getEmail().equals(CORREO);
+                    assert usuarioDTO.getImagenUrl().equals(IMAGEN);
                     return true;
                 })
                 .verifyComplete();
 
-            Mockito.verify(validaciones).verificarExistenciaUsuarioMongoYFirebaseParaIniciarSesion(uid);
+            Mockito.verify(validaciones).verificarExistenciaUsuarioMongoYFirebaseParaIniciarSesion(UID);
 
     }
 
 
     @Test
     void iniciarSesionError() {
-        String uid = "IdentificacionUsuario";
 
         Mockito.when(validaciones
                         .verificarExistenciaUsuarioMongoYFirebaseParaIniciarSesion(Mockito.any()))
                 .thenReturn(Mono.error(new ResponseStatusException(HttpStatus.UNAUTHORIZED)));
 
-        StepVerifier.create(useCase.apply(uid))
-                .expectError(ResponseStatusException.class);
+        StepVerifier.create(useCase.apply(UID))
+                .expectError(ResponseStatusException.class)
+                .verify();
 
-        Mockito.verify(validaciones).verificarExistenciaUsuarioMongoYFirebaseParaIniciarSesion(uid);
+        Mockito.verify(validaciones).verificarExistenciaUsuarioMongoYFirebaseParaIniciarSesion(UID);
 
     }
 

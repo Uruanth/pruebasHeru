@@ -2,6 +2,8 @@
 
 ### (http://localhost:8080/crearUsuario)
 
+### (https://pruebas-reto-final.herokuapp.com/crearUsuario)
+
 Petición exitosa
 
 * Código de respuesta "200".
@@ -81,7 +83,9 @@ Response
 
 # Iniciar Sesión Caso de uso (GET):
 
-### (http://localhost:8080/inicioSesion/M1PPeC5Ax5flEqSRMyzKpXAgOGD2)
+### (http://localhost:8080//M1PPeC5Ax5flEqSRMyzKpXAgOGD2)
+
+### (https://pruebas-reto-final.herokuapp.com/inicioSesion/M1PPeC5Ax5flEqSRMyzKpXAgOGD2)
 
 Petición exitosa
 
