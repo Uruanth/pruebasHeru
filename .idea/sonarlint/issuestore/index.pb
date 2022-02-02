@@ -1,12 +1,6 @@
 
 l
 <src/main/java/co/com/sofka/parches/config/WebFluxConfig.java,9\e\9e67b3ecb5d1640d1266b2219f6c11f5653dd292
-g
-7src/main/java/co/com/sofka/parches/mappers/Example.java,9\c\9c0ed368db734a94e5f73177073db8264a474604
-h
-8src/main/java/co/com/sofka/parches/useCases/Example.java,f\4\f41410e3bf17209ab001204f5ed919d056fdd989
-l
-<src/main/java/co/com/sofka/parches/repositories/Example.java,2\0\20a45771a34633f6b86ed9667b0d11cdd67bcd6f
 m
 =src/main/java/co/com/sofka/parches/useCases/CrearUsuario.java,0\b\0bbddea4904853d140ea1e5184baa851f20d352b
 k
@@ -24,12 +18,8 @@ Fsrc/main/java/co/com/sofka/parches/repositories/UsuarioRepository.java,c\7\c76
 .gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
 f
 6src/main/java/co/com/sofka/parches/utils/Firebase.java,9\6\9685f9fe52c3d1b82e5b09d85a4d9c58f75fa69b
-o
-?src/test/java/co/com/sofka/parches/ParchesApplicationTests.java,6\6\66beaf3dcc567020d8ab7197b9e267a68d07f968
 x
 Hsrc/test/java/co/com/sofka/parches/useCases/InicioSesionUseCaseTest.java,e\4\e4f396b6c84ff1b9e959da91021ffda9ad754302
-g
-7src/main/java/co/com/sofka/parches/routers/Example.java,7\6\76a92bb5f07db0330be9041d2092aa63383c96ff
 k
 ;src/main/java/co/com/sofka/parches/mappers/MapperUtils.java,b\d\bdfa40ab7a2386c1f99994c96c12448d97cbe26a
 x
