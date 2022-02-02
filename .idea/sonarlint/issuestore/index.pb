@@ -5,8 +5,6 @@ g
 7src/main/java/co/com/sofka/parches/mappers/Example.java,9\c\9c0ed368db734a94e5f73177073db8264a474604
 h
 8src/main/java/co/com/sofka/parches/useCases/Example.java,f\4\f41410e3bf17209ab001204f5ed919d056fdd989
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 l
 <src/main/java/co/com/sofka/parches/repositories/Example.java,2\0\20a45771a34633f6b86ed9667b0d11cdd67bcd6f
 m
@@ -30,8 +28,6 @@ o
 ?src/test/java/co/com/sofka/parches/ParchesApplicationTests.java,6\6\66beaf3dcc567020d8ab7197b9e267a68d07f968
 x
 Hsrc/test/java/co/com/sofka/parches/useCases/InicioSesionUseCaseTest.java,e\4\e4f396b6c84ff1b9e959da91021ffda9ad754302
-t
-Dsrc/main/java/co/com/sofka/parches/useCases/InicioSesionUseCase.java,2\2\22d4dd1007f74e91949ec23597fee4a767ad433e
 g
 7src/main/java/co/com/sofka/parches/routers/Example.java,7\6\76a92bb5f07db0330be9041d2092aa63383c96ff
 k
@@ -44,5 +40,3 @@ g
 7src/main/java/co/com/sofka/parches/dtos/UsuarioDTO.java,9\0\902280b488c07a2f2947e2dd58a93f99b12425ec
 t
 Dsrc/main/java/co/com/sofka/parches/useCases/CrearUsuarioUseCase.java,a\d\adb5e41522065f8cb1cab89049ef61be007f824f
-r
-Bsrc/main/java/co/com/sofka/parches/routers/InicioSesionRouter.java,c\a\cad1a43acb688ce6fad5b6aad9ea9aa3a3ce1842

@@ -15,7 +15,11 @@
     <description>parches</description>
     <properties>
         <java.version>11</java.version>
+        <sonar.organization>uruanth</sonar.organization>
+        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
     </properties>
+
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -51,6 +55,9 @@
             <artifactId>firebase-admin</artifactId>
             <version>8.1.0</version>
         </dependency>
+
+
+
     </dependencies>
 
     <build>
